@@ -38,9 +38,12 @@
                                 <rect key="frame" x="23" y="140" width="249" height="30"/>
                                 <color key="backgroundColor" red="0.076753797920000005" green="0.19212334549999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="15"/>
-                                <state key="normal" title="Increase Sonar Ranch">
+                                <state key="normal" title="Increase Sonar Range">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="increaseRangeButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KsK-Fw-B3j"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sonar Distance:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9mG-Lm-ptW">
                                 <rect key="frame" x="20" y="200" width="121" height="21"/>
@@ -67,17 +70,29 @@
                                 <state key="normal" title="Ping">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="pingButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="p9g-rq-0pJ"/>
+                                </connections>
                             </button>
-                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hSC-U9-AeA">
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="helmet" translatesAutoresizingMaskIntoConstraints="NO" id="hSC-U9-AeA">
                                 <rect key="frame" x="23" y="359" width="240" height="128"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.25456463464703427" green="0.59718572743354881" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
+                    <connections>
+                        <outlet property="multipliedValueLabel" destination="8TA-YA-joU" id="B64-EI-Rrp"/>
+                        <outlet property="rangeActivityLabel" destination="Qt7-Vi-GRZ" id="Szb-nC-2jl"/>
+                        <outlet property="sonarActiveLabel" destination="cDE-kc-2SR" id="hdY-yO-4gW"/>
+                        <outlet property="treasureFoundImageView" destination="hSC-U9-AeA" id="Bom-aR-nHF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="305" y="387"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="helmet" width="2231" height="1487"/>
+    </resources>
 </document>

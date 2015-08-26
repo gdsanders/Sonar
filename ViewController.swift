@@ -9,6 +9,15 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    @IBOutlet weak var rangeActivityLabel: UILabel!
+    
+    @IBOutlet weak var multipliedValueLabel: UILabel!
+    
+    @IBOutlet weak var sonarActiveLabel: UILabel!
+    
+    @IBOutlet weak var treasureFoundImageView: UIImageView!
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,7 +28,19 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    @IBAction func increaseRangeButtonTapped(sender: UIButton) {
+        
+        
+        
+    }
+    
 
+    @IBAction func pingButtonTapped(sender: UIButton) {
+        
+        
+    }
+    
 
 }
 
