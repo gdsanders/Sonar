@@ -57,7 +57,26 @@ class ViewController: UIViewController {
     
     @IBAction func pingButtonTapped(sender: UIButton) {
         
+        for times in 1...currentRange {
+            sonarActiveLabel.text = "Sonar firing \(times)"
+            print("Sonar fired \(times) \n ")
+        }
+        
+        let sonarDistance = currentRange * multipliedValue
+        
+        if sonarDistance > 20 {
+            treasureFoundImageView.image = UIImage(named: "kingTut")
+            treasureFoundImageView.hidden = false
+        }
+        else if sonarDistance > 15 {
+                treasureFoundImageView.image = UIImage(named: "helmet")
+                treasureFoundImageView.hidden = false
+            }
+        }
+    
+    @IBAction func decreaseSonarRangeTapped(sender: UIButton) {
         
     }
-
-}
+    
+    
+    }
