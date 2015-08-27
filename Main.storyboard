@@ -50,7 +50,7 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MUm-Im-0J5">
                                 <rect key="frame" x="51" y="186" width="193" height="30"/>
-                                <color key="backgroundColor" red="0.4039215686" green="0.43137254899999999" blue="0.51764705879999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.044673423160000003" green="0.1210409823" blue="0.64382102269999997" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="Decrease Sonar Range">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
