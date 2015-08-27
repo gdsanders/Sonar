@@ -38,18 +38,26 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func increaseRangeButtonTapped(sender: UIButton) {
+    @IBAction func sonarRangeTapped(sender: UIButton) {
         
+        if (currentRange < 5) && (currentRange > 0) {
+            currentRange += 1
+        }
+        else {
+            currentRange = 5
+        }
         
+        rangeActivityLabel.text = "\(currentRange)"
         
+        let sonarDistance = currentRange * multipliedValue
+        
+        multipliedValueLabel.text = "\(sonarDistance)"
     }
     
-
+    
     @IBAction func pingButtonTapped(sender: UIButton) {
         
         
     }
-    
 
 }
-
