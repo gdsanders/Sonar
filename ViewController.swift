@@ -18,10 +18,19 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var treasureFoundImageView: UIImageView!
     
+    var currentRange: Int = 1
+    
+    var multipliedValue: Int = 5
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        rangeActivityLabel.text = currentRange.description
+        multipliedValueLabel.text = "\(currentRange * multipliedValue)"
+        
+    
     }
 
     override func didReceiveMemoryWarning() {
