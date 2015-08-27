@@ -75,8 +75,19 @@ class ViewController: UIViewController {
         }
     
     @IBAction func decreaseSonarRangeTapped(sender: UIButton) {
+        if (currentRange < 20) && (currentRange > 0) {
+            currentRange -= 1
+        }
+        else {
+            currentRange = 5
+        }
         
+        rangeActivityLabel.text = "\(currentRange)"
+        
+        let sonarDistance = currentRange * multipliedValue
+        
+        multipliedValueLabel.text = "\(sonarDistance)"
     }
+}
     
-    
-    }
+
